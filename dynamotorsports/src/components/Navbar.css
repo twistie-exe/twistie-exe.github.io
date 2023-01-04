@@ -1,0 +1,67 @@
+.navbar-container{
+    background-color: black;
+    height: 10
+    0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+.navbar-logo > img {
+    height: 100px;
+}
+
+.socials-container{
+    display: flex;
+    background-color: black;
+    gap: 25px;
+}
+
+.social-icon-link > img {
+    height: 20px;
+}
+
+.calender-date {
+    color: #fff;
+    margin: 0;
+    margin-left: auto;
+}
+
+.divider-one {
+    border: 4px solid red;
+}
+
+.divider-two { 
+    border: 2px solid red;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-menu > li :any-link {
+    color: white;
+    list-style: none;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.nav-menu > li :hover {
+    color: red;
+}
