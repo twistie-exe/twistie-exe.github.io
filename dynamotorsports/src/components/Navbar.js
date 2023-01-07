@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -7,11 +7,14 @@ export const openInNewTab = (url) => {
   if (newWindow) newWindow.opener = null;
 };
 
+
 function Navbar() {
   const date = new Date();
   const currentDate = `${date.getDate()}/${date.getMonth() +
-    1}/${date.getFullYear()}`;
+    1}/${date.getFullYear()
+  }`;
 
+  // Add navbar while scrolling
   
   return (
     <>
