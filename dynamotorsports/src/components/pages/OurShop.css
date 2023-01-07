@@ -1,5 +1,46 @@
-.ourshop-page h1 {
-    background-color: white;
-    color: blue;
-    font-size: 5rem;
+.ourshop-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ourshop-content {
+    margin: auto;
+    width: 50%;
+    height: 20vw;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ourshop-content > h3 {
+    color: rgb(87, 149, 241);
+}
+
+.ourshop-content > p {
+    color: rgb(196, 196, 196);
+}
+
+.ourshop-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 55%;
+    height: 20vw;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dynapack-image {
+    margin: auto;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
