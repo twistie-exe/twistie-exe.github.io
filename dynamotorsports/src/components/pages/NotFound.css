@@ -1,0 +1,19 @@
+.error-page {
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+}
+
+.error-page h1{
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: auto;
+}
+
+.error-page p {
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: auto;
+}
