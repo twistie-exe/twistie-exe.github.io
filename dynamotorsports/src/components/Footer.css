@@ -1,0 +1,7 @@
+.footer__container {
+    background-color: gray;
+}
+
+.divider-container > hr {
+    margin: auto;
+}
