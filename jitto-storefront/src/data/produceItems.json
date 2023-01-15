@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Apples",
+      "image": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGVzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 10,
+      "price": 2.99
+    },
+    {
+      "id": 2,
+      "name": "Bananas",
+      "image": "https://images.unsplash.com/photo-1603052875302-d376b7c0638a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8QmFuYW5hc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 5,
+      "price": 1.99
+    },
+    {
+      "id": 3,
+      "name": "Oranges",
+      "image": "https://images.unsplash.com/photo-1597714026720-8f74c62310ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3Jhbmdlc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 15,
+      "price": 3.49
+    },
+    {
+      "id": 4,
+      "name": "Lemons",
+      "image": "https://images.unsplash.com/photo-1609639643505-3c158a56de42?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8TGVtb25zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 20,
+      "price": 2.49
+    },
+    {
+      "id": 5,
+      "name": "Strawberries",
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RyYXdiZXJyaWVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 8,
+      "price": 4.99
+    },
+    {
+      "id": 6,
+      "name": "Blueberries",
+      "image": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "weight": "1 lb",
+      "stock": 12,
+      "price": 5.99
+    }
+]
