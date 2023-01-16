@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jitto-storefront/static/css/main.40384a3b.css",
+    "main.js": "/jitto-storefront/static/js/main.b5a8051f.js",
+    "index.html": "/jitto-storefront/index.html",
+    "main.40384a3b.css.map": "/jitto-storefront/static/css/main.40384a3b.css.map",
+    "main.b5a8051f.js.map": "/jitto-storefront/static/js/main.b5a8051f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40384a3b.css",
+    "static/js/main.b5a8051f.js"
+  ]
+}
