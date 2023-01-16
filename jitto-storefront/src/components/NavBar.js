@@ -6,14 +6,7 @@ import { useShoppingCart } from "../context/ShoppingCartContext.js";
 function NavBar() {
 
   const { 
-    cart,
-    addItem,
-    removeItem,
-    clearCart,
-    increaseQuantity,
-    decreaseQuantity,
     getNumOfItems,
-    getItemQuantity,
     printCart,
    } = useShoppingCart();
 

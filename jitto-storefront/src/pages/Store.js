@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
@@ -11,15 +11,11 @@ function Store() {
   const [selectedButton, setSelectedButton] = useState(1);
 
   const {
-    cart,
     addItem,
     removeItem,
-    clearCart,
     increaseQuantity,
     decreaseQuantity,
-    getNumOfItems,
     getItemQuantity,
-    printCart,
   } = useShoppingCart();
 
   return (
