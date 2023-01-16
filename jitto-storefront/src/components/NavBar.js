@@ -14,7 +14,7 @@ function NavBar() {
     decreaseQuantity,
     getNumOfItems,
     getItemQuantity,
-    getSubtotal,
+    printCart,
    } = useShoppingCart();
 
   return (
@@ -26,7 +26,7 @@ function NavBar() {
         <div className="flex flex-row items-center w-screen">
           <input className="p-3 w-2/3 mx-auto font-semibold bg-light-gray placeholder:text-black hover:outline focus:outline outline-2 outline-jitto focus:placeholder:text-slate-gray rounded-md drop-shadow-md" type="text" placeholder="Search Jitto..." />
         </div>
-        <button className="flex items-center flex-row p-3 mr-2 bg-white hover:outline outline-2 outline-jitto rounded-full drop-shadow-md">
+        <button onClick={() => {printCart()}} className="flex items-center flex-row p-3 mr-2 bg-white hover:outline outline-2 outline-jitto rounded-full drop-shadow-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

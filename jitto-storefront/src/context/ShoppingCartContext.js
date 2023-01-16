@@ -6,7 +6,7 @@ export const useShoppingCart = () => useContext(ShoppingCartContext);
 
 export function ShoppingCartProvider({ children }) {
 
-  const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
 
     const addItem = (item) => {
         const itemInCart = cart.find((cartItem) => cartItem.id === item.id);
@@ -32,17 +32,13 @@ export function ShoppingCartProvider({ children }) {
     };
 
     const increaseQuantity = (id) => {
-        setCart(
-            cart.map((item) =>
-                item.id === id ? { ...item, quantity: item.quantity + 1 } : item
-            )
-        );
+        addItem(id);
     };
     
     const decreaseQuantity = (id) => {
         setCart(
             cart.map((item) =>
-                item.id === id && item.quantity > 0
+                item.id === id && item.quantity > 1
                     ? { ...item, quantity: item.quantity - 1 }
                     : item
             )
@@ -50,7 +46,7 @@ export function ShoppingCartProvider({ children }) {
     };
 
     const getNumOfItems = () => {
-        return cart.reduce((total, item) => total + item.quantity, 0);
+        return cart.length;
     };
 
     const getItemQuantity = (id) => {
@@ -58,8 +54,8 @@ export function ShoppingCartProvider({ children }) {
         return item ? item.quantity : 0;
     };
 
-    const getSubtotal = () => {
-        return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+    const printCart = () => {
+        console.log(cart);
     };
 
     const value = {
@@ -71,7 +67,7 @@ export function ShoppingCartProvider({ children }) {
         decreaseQuantity,
         getNumOfItems,
         getItemQuantity,
-        getSubtotal,
+        printCart,
     };
 
   return (

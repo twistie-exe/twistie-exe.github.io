@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Scrollbars } from "react-custom-scrollbars-2";
 
@@ -19,7 +19,7 @@ function Store() {
     decreaseQuantity,
     getNumOfItems,
     getItemQuantity,
-    getSubtotal,
+    printCart,
   } = useShoppingCart();
 
   return (
@@ -51,6 +51,7 @@ function Store() {
               id={1}
               isSelected={selectedButton === 1}
               setSelectedButton={setSelectedButton}
+              className="bg-white text-gray-500 hover:text-jitto"
               to="/"
               svg={
                 <svg
@@ -124,30 +125,38 @@ function Store() {
       <div className="bg-white w-full mx-2 my-2">
         <span className="text-lg font-bold text-center">Fruits</span>
         <div className="grid grid-cols-6 grid-gap-2">
-    {produceItems.map((item) => (
-        <div key={item.id} className="col-span-2 w-full">
-            <img src={item.image} alt={item.name} className="w-full h-32 object-cover" />
-            <div className="text-center">
-                <span className="text-lg font-bold">{item.name}</span>
-                <span className="text-sm">{formatCurrency(item.price)}</span>
-                <span className="text-sm">{item.weight}</span>
-            </div>
-            <div className="text-center">
-                <Button onClick={() => addItem(item)} className="inline-block">
+        {produceItems.map((item) => (
+    <div key={item.id} className="col-span-2 w-full">
+        <img src={item.image} alt={item.name} className="w-full h-32 object-cover p-5" />
+        <div className="flex flex-col text-center">
+            <span className="text-lg font-bold">{item.name}</span>
+            <span className="text-sm">{formatCurrency(item.price)}</span>
+            <span className="text-sm">{item.weight}</span>
+        </div>
+        <div className="text-center">
+            {getItemQuantity(item.id) > 0 ? (
+                <div className="flex items-center justify-center">
+                    <Button onClick={() => decreaseQuantity(item.id)} className="block">
+                        -
+                    </Button>
+                    Quantity: {getItemQuantity(item.id)}
+                    <Button onClick={() => increaseQuantity(item)} className="block">
+                        +
+                    </Button>
+                </div>
+            ) : (
+                <Button onClick={() => {addItem(item)}} className="block bg-light-gray hover:outline outline-jitto">
                     Add
                 </Button>
-                <Button onClick={() => removeItem(item)} className="inline-block">
-                    Remove
-                </Button>
-                <Button onClick={() => decreaseQuantity(item)} className="block">
-                    Decrease Quantity
-                </Button>
-                <Button onClick={() => increaseQuantity(item)} className="block">
-                    Increase Quantity
-                </Button>
-            </div>
+            )}
+            {getItemQuantity(item.id) > 0 && 
+            <Button onClick={() => removeItem(item.id)} svg={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                    </svg>
+                    } className="block bg-jitto" />}
         </div>
-    ))}
+    </div>
+))}
 </div>
     </div>
     </div>
