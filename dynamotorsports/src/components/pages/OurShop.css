@@ -6,7 +6,7 @@
 .ourshop-content {
     margin: auto;
     width: 50%;
-    height: 20vw;
+    height: fit-content;
     padding: 10px;
     background-color: #1a1a1a;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 
 .ourshop-content > p {
-    color: rgb(196, 196, 196);
+    color: rgb(196, 196, 196);  
 }
 
 .ourshop-images {
@@ -27,8 +27,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    width: 55%;
-    height: 20vw;
+    width: fit-content;
+    height: 5rem;
     padding: 10px;
     background-color: #1a1a1a;
     border-radius: 10px;

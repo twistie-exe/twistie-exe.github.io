@@ -1,7 +1,22 @@
-.footer__container {
-    background-color: gray;
+.footer {
+    width: 100%;
 }
 
-.divider-container > hr {
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    width: 100%;
+}
+
+.footer-logo {
+
+}
+
+.footer__links-socials {
+
+}
+
+.divider-two {
     margin: auto;
 }

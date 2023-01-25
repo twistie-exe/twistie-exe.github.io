@@ -10,10 +10,8 @@ export const openInNewTab = (url) => {
 function Footer() {
   return (
     <div className="footer">
+      <hr className="divider-two"></hr>
       <div className="footer__container">
-        <div className="divider-container">
-          <hr className="divider-two"></hr>
-        </div>
         <div className="footer-logo">
           <img src="/logo.png" alt="logo" />
         </div>
@@ -64,34 +62,34 @@ function Footer() {
           </Link>
         </div>
         <div className="footer__links-additional">
-            <h3>Additional Links</h3>
-            <ul className="nav-menu">
-                <li className="nav-item">
-                <Link to="/" className="nav-links">
-                    Home
-                </Link>
-                </li>
-                <li className="nav-item">
-                <Link to="/services" className="nav-links">
-                    Services
-                </Link>
-                </li>
-                <li className="nav-item">
-                <Link to="/gallery" className="nav-links">
-                    Gallery
-                </Link>
-                </li>
-                <li className="nav-item">
-                <Link to="/affiliates" className="nav-links">
-                    Affiliates
-                </Link>
-                </li>
-                <li className="nav-item">
-                <Link to="/contact" className="nav-links">
-                    Contact Us
-                </Link>
-                </li>
-            </ul>
+          <h3>Additional Links</h3>
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <Link to="/" className="nav-links">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/services" className="nav-links">
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/gallery" className="nav-links">
+                Gallery
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/affiliates" className="nav-links">
+                Affiliates
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-links">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="footer__links-legal">
           {/* privacy policy, terms of use, disclaimer, copyright */}
